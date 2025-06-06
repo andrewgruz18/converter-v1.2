@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mērvienību pārveidotājs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="converter-container">
+    <h1>Mērvienību pārveidotājs</h1>
+    <label>Kategorija:
+      <select id="category">
+        <option value="distance">Attālums</option>
+        <option value="temperature">Temperatūra</option>
+        <option value="weight">Svars</option>
+        <option value="speed">Ātrums</option>
+      </select>
+    </label>
+    <br />
+    <div>
+      <input type="number" id="inputValue" placeholder="Ievadiet vērtību" />
+      <select id="fromUnit"></select>
+      <span>→</span>
+      <select id="toUnit"></select>
+    </div>
+    <br />
+    <p>Rezultāts: <span id="result"></span></p>
+  </div>
+
+  <div class="info-table">
+    <!-- Tavs tabulu saturs šeit (var arī izdalīt atsevišķā failā vai saglabāt HTML) -->
+    <h3>Mērvienību saīsinājumi</h3>
+    <h4>Attāluma mērvienības (Distance)</h4>
+    <table>
+      <tr><th>Saīsinājums</th><th>Nosaukums (LV / EN)</th></tr>
+      <tr><td>m</td><td>Metri (Meters)</td></tr>
+      <tr><td>km</td><td>Kilometri (Kilometers)</td></tr>
+      <tr><td>mi</td><td>Jūdzes (Miles)</td></tr>
+      <tr><td>ft</td><td>Pēdas (Feet)</td></tr>
+      <tr><td>in</td><td>Collas (Inches)</td></tr>
+      <tr><td>yd</td><td>Jardi (Yards)</td></tr>
+      <tr><td>cm</td><td>Centimetri (Centimeters)</td></tr>
+      <tr><td>mm</td><td>Milimetri (Millimeters)</td></tr>
+      <tr><td>nmi</td><td>Jūras jūdzes (Nautical Miles)</td></tr>
+      <tr><td>au</td><td>Astronomiskās vienības (Astronomical Units)</td></tr>
+    </table>
+    <h4>Temperatūras mērvienības (Temperature)</h4>
+    <table>
+      <tr><th>Saīsinājums</th><th>Nosaukums (LV / EN)</th></tr>
+      <tr><td>C</td><td>Celsija grādi (Celsius)</td></tr>
+      <tr><td>F</td><td>Fārenheita grādi (Fahrenheit)</td></tr>
+      <tr><td>K</td><td>Kelvini (Kelvin)</td></tr>
+    </table>
+    <h4>Svara mērvienības (Weight)</h4>
+    <table>
+      <tr><th>Saīsinājums</th><th>Nosaukums (LV / EN)</th></tr>
+      <tr><td>g</td><td>Grami (Grams)</td></tr>
+      <tr><td>kg</td><td>Kilogrami (Kilograms)</td></tr>
+      <tr><td>mg</td><td>Miligrami (Milligrams)</td></tr>
+      <tr><td>lb</td><td>Mārciņas (Pounds)</td></tr>
+      <tr><td>oz</td><td>Unces (Ounces)</td></tr>
+      <tr><td>t</td><td>Tonnas (Tonnes)</td></tr>
+      <tr><td>ct</td><td>Karāti (Carats)</td></tr>
+      <tr><td>st</td><td>Akmens (Stone)</td></tr>
+      <tr><td>gr</td><td>Graudi (Grains)</td></tr>
+      <tr><td>slug</td><td>Slugi (Slugs)</td></tr>
+    </table>
+    <h4>Ātruma mērvienības (Speed)</h4>
+    <table>
+      <tr><th>Saīsinājums</th><th>Nosaukums (LV / EN)</th></tr>
+      <tr><td>m/s</td><td>Metri sekundē (Meters per second)</td></tr>
+      <tr><td>km/h</td><td>Kilometri stundā (Kilometers per hour)</td></tr>
+      <tr><td>mph</td><td>Jūdzes stundā (Miles per hour)</td></tr>
+      <tr><td>kn</td><td>Mezgli (Knots)</td></tr>
+    </table>
+  </div>
+
+  <script src="converter.js"></script>
+</body>
+</html>
